@@ -1,5 +1,6 @@
-package com.example.inventoryhub.entity;
+package com.example.inventoryhub.entity.armazem;
 
+import com.example.inventoryhub.entity.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,4 +21,9 @@ public class Armazem {
 
     @Embedded
     private Endereco endereco;
+
+    public Armazem(DadosCadastroArmazem dadosCadastroArmazem) {
+        this.nome = dadosCadastroArmazem.nome2();
+        this.endereco = new Endereco(dadosCadastroArmazem.endereco2());
+    }
 }

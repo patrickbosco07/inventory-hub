@@ -1,5 +1,6 @@
-package com.example.inventoryhub.entity;
+package com.example.inventoryhub.entity.estoque;
 
+import com.example.inventoryhub.entity.armazem.Armazem;
 import com.example.inventoryhub.entity.produto.Produto;
 import jakarta.persistence.*;
 import lombok.*;
