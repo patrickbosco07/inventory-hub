@@ -1,6 +1,5 @@
-package com.example.inventoryhub.entity.fornecedor;
+package com.example.inventoryhub.domain.fornecedor;
 
-import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 

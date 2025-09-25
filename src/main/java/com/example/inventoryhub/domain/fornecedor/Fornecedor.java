@@ -1,6 +1,6 @@
-package com.example.inventoryhub.entity.fornecedor;
+package com.example.inventoryhub.domain.fornecedor;
 
-import com.example.inventoryhub.entity.Endereco;
+import com.example.inventoryhub.domain.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package com.example.inventoryhub.entity.fornecedor;
+package com.example.inventoryhub.domain.fornecedor;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

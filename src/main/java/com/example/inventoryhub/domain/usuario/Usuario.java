@@ -1,4 +1,4 @@
-package com.example.inventoryhub.entity;
+package com.example.inventoryhub.domain.usuario;
 
 import jakarta.persistence.*;
 import lombok.*;

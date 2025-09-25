@@ -1,6 +1,6 @@
-package com.example.inventoryhub.entity.armazem;
+package com.example.inventoryhub.domain.armazem;
 
-import com.example.inventoryhub.entity.Endereco;
+import com.example.inventoryhub.domain.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -19,6 +19,7 @@ public class Armazem {
     @Column(nullable = false)
     private String nome;
 
+    @Column(unique = true)
     @Embedded
     private Endereco endereco;
 

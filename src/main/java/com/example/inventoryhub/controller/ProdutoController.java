@@ -1,8 +1,8 @@
 package com.example.inventoryhub.controller;
 
-import com.example.inventoryhub.entity.produto.DadosCadastroProduto;
-import com.example.inventoryhub.entity.produto.DadosDetalhamentoProduto;
-import com.example.inventoryhub.entity.produto.Produto;
+import com.example.inventoryhub.domain.produto.DadosCadastroProduto;
+import com.example.inventoryhub.domain.produto.DadosDetalhamentoProduto;
+import com.example.inventoryhub.domain.produto.Produto;
 import com.example.inventoryhub.repository.ProdutoRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

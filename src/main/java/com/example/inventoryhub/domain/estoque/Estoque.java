@@ -1,7 +1,7 @@
-package com.example.inventoryhub.entity.estoque;
+package com.example.inventoryhub.domain.estoque;
 
-import com.example.inventoryhub.entity.armazem.Armazem;
-import com.example.inventoryhub.entity.produto.Produto;
+import com.example.inventoryhub.domain.produto.Produto;
+import com.example.inventoryhub.domain.armazem.Armazem;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -27,4 +27,10 @@ public class Estoque {
 
     @Column(nullable = false)
     private Integer quantidade = 0;
+
+    public Estoque(Produto produto, Armazem armazem, Integer qtd) {
+        this.produto = produto;
+        this.armazem = armazem;
+        this.quantidade= qtd;
+    }
 }

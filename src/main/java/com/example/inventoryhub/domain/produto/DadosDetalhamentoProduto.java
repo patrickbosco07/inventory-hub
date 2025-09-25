@@ -1,4 +1,4 @@
-package com.example.inventoryhub.entity.produto;
+package com.example.inventoryhub.domain.produto;
 
 import java.math.BigDecimal;
 

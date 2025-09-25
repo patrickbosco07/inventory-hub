@@ -1,6 +1,6 @@
-package com.example.inventoryhub.entity;
+package com.example.inventoryhub.domain;
 
-import com.example.inventoryhub.entity.fornecedor.DadosCadastroEndereco;
+import com.example.inventoryhub.domain.fornecedor.DadosCadastroEndereco;
 import jakarta.persistence.Embeddable;
 import lombok.*;
 

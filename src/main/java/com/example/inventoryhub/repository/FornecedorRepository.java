@@ -1,6 +1,6 @@
 package com.example.inventoryhub.repository;
 
-import com.example.inventoryhub.entity.fornecedor.Fornecedor;
+import com.example.inventoryhub.domain.fornecedor.Fornecedor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

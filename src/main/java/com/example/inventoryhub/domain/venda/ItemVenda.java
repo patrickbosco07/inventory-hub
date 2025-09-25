@@ -1,6 +1,6 @@
-package com.example.inventoryhub.entity;
+package com.example.inventoryhub.domain.venda;
 
-import com.example.inventoryhub.entity.produto.Produto;
+import com.example.inventoryhub.domain.produto.Produto;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;

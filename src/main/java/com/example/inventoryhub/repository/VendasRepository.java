@@ -1,6 +1,6 @@
 package com.example.inventoryhub.repository;
 
-import com.example.inventoryhub.entity.Vendas;
+import com.example.inventoryhub.domain.venda.Vendas;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
