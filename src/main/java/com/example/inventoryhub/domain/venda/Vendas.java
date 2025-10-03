@@ -30,4 +30,10 @@ public class Vendas {
 
     @OneToMany(mappedBy = "venda", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ItemVenda> listaProdutos;
+
+    public Vendas(DadosCadastroVenda dados) {
+        this.valorTotal = dados.valorTotal();
+        this.formaPagamento = dados.formaPagamento();
+        this.data = LocalDateTime.now();
+    }
 }

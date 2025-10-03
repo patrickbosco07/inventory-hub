@@ -1,6 +1,6 @@
 package com.example.inventoryhub.domain.estoque;
 
-import com.example.inventoryhub.domain.ArmazemExistenteException;
+import com.example.inventoryhub.domain.ValidacaoException;
 import com.example.inventoryhub.domain.armazem.Armazem;
 import com.example.inventoryhub.domain.produto.Produto;
 import com.example.inventoryhub.repository.ArmazemRepository;
@@ -29,7 +29,7 @@ public class EstoqueService {
         var armazem = armazemRepository.findById(dados.idArmazem()).orElseThrow(() -> new EntityNotFoundException("Armazém não encontrado " + dados.idArmazem()));
         var estoqueExistente = checarExistenciaEstoque(produto, armazem);
         if (estoqueExistente.isPresent()){
-            throw new ArmazemExistenteException("Armazém já existente");
+            throw new ValidacaoException("Armazém já existente");
         }
         var estoque = new Estoque(produto,armazem,dados.qtd());
         return estoqueRepository.save(estoque);

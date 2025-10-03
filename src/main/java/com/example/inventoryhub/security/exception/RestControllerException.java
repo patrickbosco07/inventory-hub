@@ -1,6 +1,6 @@
 package com.example.inventoryhub.security.exception;
 
-import com.example.inventoryhub.domain.ArmazemExistenteException;
+import com.example.inventoryhub.domain.ValidacaoException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,8 +23,8 @@ public class RestControllerException {
         return ResponseEntity.badRequest().body(erros.stream().map(DadosErroValidacao::new).toList());
     }
 
-    @ExceptionHandler(ArmazemExistenteException.class)
-    public ResponseEntity tratarErroArmazemNaoExistente(ArmazemExistenteException a){
+    @ExceptionHandler(ValidacaoException.class)
+    public ResponseEntity tratarErroArmazemNaoExistente(ValidacaoException a){
         return ResponseEntity.badRequest().body(a.getMessage());
     }
 
