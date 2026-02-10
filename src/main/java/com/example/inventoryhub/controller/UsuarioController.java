@@ -30,4 +30,10 @@ public class UsuarioController {
         var listaUsuarios = usuarioService.listarTodos(paginacao);
         return ResponseEntity.ok(listaUsuarios);
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity buscarUsuarioEspecifico(@PathVariable Long id){
+        var usuario = usuarioService.listarDeterminadoUsuario(id);
+        return ResponseEntity.ok(usuario);
+    }
 }

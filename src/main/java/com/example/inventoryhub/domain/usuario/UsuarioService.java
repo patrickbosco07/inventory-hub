@@ -46,4 +46,8 @@ public class UsuarioService {
     public Page<DadosListagemUsuario> listarTodos(Pageable paginacao) {
         return usuarioRepository.findAllByAtivoTrue(paginacao).map(DadosListagemUsuario::new);
     }
+
+    public Usuario listarDeterminadoUsuario(Long id) {
+        return usuarioRepository.getReferenceById(id);
+    }
 }

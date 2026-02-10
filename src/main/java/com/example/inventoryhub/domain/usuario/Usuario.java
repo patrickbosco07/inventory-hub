@@ -26,12 +26,7 @@ public class Usuario implements UserDetails {
     private String login;
     @Column(nullable = false, length = 255)
     private String senha;
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "users_roles",
-            joinColumns=@JoinColumn(name = "user_id"),
-            inverseJoinColumns=@JoinColumn(name = "role_id")
-    )
+    @ManyToOne(fetch = FetchType.LAZY)
     private Set<Role> roles = new HashSet<>();
     private Boolean ativo;
 
